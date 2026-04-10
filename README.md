@@ -31,4 +31,3 @@ It distributes and reinforces it.
 
 Standards → HHI_GOV_01 → Systems → Narrative Feed
 
-EOF
