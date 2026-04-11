@@ -19,7 +19,7 @@ DOI="https://doi.org/10.5281/zenodo.18615600"
 STANDARDS="https://github.com/Hollow-house-institute/Hollow_House_Standards_Library"
 GOV="https://github.com/Hollow-house-institute/HHI_GOV_01"
 
-# --- CORE CONTENT ---
+# --- POSTS ---
 cat > "$POST_FILE" <<EOT
 # HHI Authority Output — $DATE
 
@@ -43,7 +43,7 @@ Standards: $STANDARDS
 Governance: $GOV
 EOT
 
-# --- LINKEDIN FORMAT ---
+# --- LINKEDIN ---
 cat > "$LI_FILE" <<EOT
 AI systems do not fail at design.
 They fail at execution.
@@ -61,7 +61,7 @@ Governance must operate at execution time.
 DOI: $DOI
 EOT
 
-# --- DEV ARTICLE ---
+# --- DEV ---
 cat > "$DEV_FILE" <<EOT
 # Execution-Time Governance — $DATE
 
@@ -88,7 +88,7 @@ Behavior → Metrics → Severity → Decision Boundary → Enforcement
 - Governance: $GOV
 EOT
 
-# --- MANIFEST (AUDIT) ---
+# --- MANIFEST ---
 SHA=$(sha256sum "$POST_FILE" | awk '{print $1}')
 
 cat > "$MANIFEST_FILE" <<EOT
