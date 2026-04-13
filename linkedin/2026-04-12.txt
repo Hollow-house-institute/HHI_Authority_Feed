@@ -1,0 +1,14 @@
+AI systems do not fail at design.
+They fail at execution.
+
+Most organizations focus on building AI correctly.
+Few control how it behaves under real conditions.
+
+Without enforcement:
+- drift accumulates
+- escalation is delayed
+- risk compounds
+
+Governance must operate at execution time.
+
+DOI: https://doi.org/10.5281/zenodo.18615600

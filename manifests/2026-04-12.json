@@ -1,0 +1,12 @@
+{
+  "date": "2026-04-12",
+  "post_file": "/data/data/com.termux/files/home/hhi_authority/posts/2026-04-12.md",
+  "linkedin_file": "/data/data/com.termux/files/home/hhi_authority/linkedin/2026-04-12.txt",
+  "dev_file": "/data/data/com.termux/files/home/hhi_authority/dev/2026-04-12.md",
+  "sha256": "a25c761966e408acd051c441804e3a528c9632a38bffca71fba3d3688d25d26d",
+  "canonical": {
+    "doi": "https://doi.org/10.5281/zenodo.18615600",
+    "standards": "https://github.com/Hollow-house-institute/Hollow_House_Standards_Library",
+    "governance": "https://github.com/Hollow-house-institute/HHI_GOV_01"
+  }
+}
