@@ -1,7 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 DATE=$(date +%Y-%m-%d)
-
+DAY_INDEX=$(date +%d)
+MOD=$((DAY_INDEX % 4))
 BASE=~/hhi_authority
 POSTS=$BASE/posts
 LINKEDIN=$BASE/linkedin
@@ -18,7 +19,26 @@ MANIFEST_FILE="$MANIFESTS/$DATE.json"
 DOI="https://doi.org/10.5281/zenodo.18615600"
 STANDARDS="https://github.com/Hollow-house-institute/Hollow_House_Standards_Library"
 GOV="https://github.com/Hollow-house-institute/HHI_GOV_01"
+if [ "$MOD" -eq 0 ]; then
+STATEMENT="AI systems do not fail at design. They fail at execution."
+BREAKDOWN="AI reflects structure through permissions and workflows. These patterns scale automatically."
+DEV_TITLE="Execution-Time Governance"
 
+elif [ "$MOD" -eq 1 ]; then
+STATEMENT="Monitoring is not governance."
+BREAKDOWN="Monitoring observes behavior. Governance enforces what is allowed to continue."
+DEV_TITLE="Why Monitoring Fails"
+
+elif [ "$MOD" -eq 2 ]; then
+STATEMENT="If your system cannot stop itself, it is not governed."
+BREAKDOWN="Without stop conditions, systems continue harmful behavior indefinitely."
+DEV_TITLE="Stop Authority in AI Systems"
+
+else
+STATEMENT="Policies without enforcement are symbolic."
+BREAKDOWN="Policies define intent. Enforcement defines reality."
+DEV_TITLE="The Enforcement Gap"
+fi
 # --- POSTS ---
 cat > "$POST_FILE" <<EOT
 # HHI Authority Output — $DATE
