@@ -31,3 +31,8 @@ It distributes and reinforces it.
 
 Standards → HHI_GOV_01 → Systems → Narrative Feed
 
+
+## Enforcement Statement
+
+Authority is enforced through explicit Decision Boundaries, escalation thresholds, and Stop Authority conditions.
+
