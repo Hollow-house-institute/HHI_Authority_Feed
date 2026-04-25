@@ -12,7 +12,7 @@ grep "Performance:" "$LOG" | while read -r line; do
   IMP=$(echo "$line" | sed -n 's/.*impressions=\([0-9]*\).*/\1/p')
 
   # scoring rule
-  if [ "$IMP" -ge 500 ]; then
+  if [ "$IMP" -ge 50 ]; then
     INC=2
   elif [ "$IMP" -ge 200 ]; then
     INC=1
